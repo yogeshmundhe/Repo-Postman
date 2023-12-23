@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "0ec25ab3-dbe5-414f-8f7b-03d096bdbd5d",
+		"_postman_id": "a3d36c34-17e6-4cd6-b960-115109d53975",
 		"name": "Simple Grocery Store API Copy",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "29759934"
@@ -24,6 +24,10 @@
 									"\r",
 									"pm.test(\"To verify response property\" , function(){\r",
 									"    pm.expect(response.status).eql('UP')\r",
+									"})\r",
+									"\r",
+									"pm.test(\"To verify status code\" ,()=>{\r",
+									"    pm.response.to.have.status(200);\r",
 									"})"
 								],
 								"type": "text/javascript"
